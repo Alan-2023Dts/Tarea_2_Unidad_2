@@ -71,6 +71,27 @@ def ejercicio_6():
 
 def ejercicio_7():
     #ejercicio 7
+    bandera = True
+    while bandera :
+        Calificacion_Numerica = int(input("Ingrese calificacion numerica (1-20): "))
+        calificacion_letra = ""
+        if (Calificacion_Numerica >=19  and Calificacion_Numerica <= 20):
+            calificacion_letra = "A"
+        elif (Calificacion_Numerica >= 18 and Calificacion_Numerica < 16):
+            calificacion_letra = "B"
+        elif (Calificacion_Numerica >= 13 and Calificacion_Numerica < 15):
+            calificacion_letra = "C"
+        elif (Calificacion_Numerica >= 10 and Calificacion_Numerica < 12):
+            calificacion_letra = "D"
+        elif (Calificacion_Numerica >= 0 and Calificacion_Numerica < 10):
+            calificacion_letra = "E"
+        elif (Calificacion_Numerica < 0 or Calificacion_Numerica > 20):
+            print("Calificacion invalida. Debe estar entre 0 y 20.")
+            calificacion_letra = "Inválida"
+            print(f"La calificación en letra es: {calificacion_letra}")
+            print("Intentelo de nuevo")
+        else:
+            bandera = False
     pass
 
 def ejercicio_8():
