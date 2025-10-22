@@ -37,34 +37,15 @@ def ejercicio_2():
         print (r2)
     pass
 def ejercicio_3():
-   #Aqui va el ejercicio_3
-   Num_1 = int(input("Ingrese el primer número: "))
-   Num_2 = int(input("Ingrese el segundo número: "))
-   Num_3 = int(input("Ingrese el tercer número: "))
-   if Num_1 == Num_2 or Num_1 == Num_3 or Num_2 == Num_3:
-       print("Los tres números son iguales.")
-   elif Num_1 > Num_2 and Num_1 > Num_3:
-       print(f"El número mayor es: {Num_1}") 
-       if Num_2 > Num_3:
-           print(f"El número menor es: {Num_3}")
-       else:
-           print(f"El número menor es: {Num_2}")
-           
-   elif Num_2 > Num_1 and Num_2 > Num_3:
-       print(f"El número mayor es: {Num_2}")
-       if Num_1 > Num_3:
-           print(f"El número menor es: {Num_3}")
-       else:
-           print(f"El número menor es: {Num_1}")
-           
-   elif Num_3 > Num_1 and Num_3 > Num_2:
-       print(f"El número mayor es: {Num_3}")
-       if Num_1 > Num_2:
-           print(f"El número menor es: {Num_2}")
-       else:
-           print(f"El número menor es: {Num_1}")
-    
-pass
+    #Aqui va el ejercicio_3
+    print("Suma hasta el numero 10 ")
+    total = 0
+    for i in range(1, 11):  # Contador para llegar hasta 10
+        total += i
+    print(f"La suma es: {total}")
+
+     
+ 
     
 def ejercicio_4():
     #Aqui va el ejercicio_4
@@ -72,6 +53,7 @@ def ejercicio_4():
 
 def ejercicio_5():
     #Aqui va el ejercicio_5
+    
     pass
 
 def ejercicio_6():
