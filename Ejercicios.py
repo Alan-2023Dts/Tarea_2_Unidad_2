@@ -100,6 +100,17 @@ def ejercicio_8():
 
 def ejercicio_9():
     #Aqui va el ejercicio_9 
+    Numero = int(input("Ingrese un número "))
+    if Numero < 2:
+        print(f"{Numero} NO es un número primo")
+    else:
+        for i in range(2, int(math.sqrt(Numero)) + 1):
+            if (Numero % i == 0):
+                print(f"{Numero} NO es un número primo")
+                break
+            else:
+                 print(f"{Numero} es un número primo")
+        
     pass
 
 def ejercicio_10():
