@@ -1,6 +1,4 @@
 def ejercicio_1():
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     #Aqui va el ejercicio_1
     Num_1 = int(input("Ingrese el primer número: "))
     Num_2 = int(input("Ingrese el segundo número: "))
@@ -9,14 +7,8 @@ def ejercicio_1():
     elif Num_2 > Num_1: #compara el numero 2 con el numero 1
         print(f"El número mayor es: {Num_2}")
     pass
-  
-=======
-=======
->>>>>>> Stashed changes
     #Aqui va el ejercicio_7
-  pass
->>>>>>> Stashed changes
-                                                                                                                                 
+    pass                                                                                                                     
 def ejercicio_2():
     #Aqui va el ejercicio_2
     print ("sistema de comparacion de numeros")
@@ -50,6 +42,47 @@ def ejercicio_3():
     
 def ejercicio_4():
     #Aqui va el ejercicio_4
+    import math
+    m=input("¿el triangulo tiene un angulo de 90 grados? si/no")
+    if m=="si":
+        print ("sistema para obtener hipotenusa de un triangulo rectangulo")
+        print ("1----por teorema de pitagoras")
+        print ("2----por trigonometria")
+        print ("3----salir")
+        a=int(input("seleccione una opción"))
+        match a:
+            case 1:
+                b=int(input("ingrese el cateto opuesto"))
+                c=int(input("ingrese el cateto adyacente"))
+                d=math.sqrt((b**2)+(c**2))
+                print("la hipotenusa del triangulo es igual a ", d)
+                e=int(input("si desea continuar con la comproacion presione 1 de locontrario presione 2"))
+                match e:
+                    case 1:
+                        f=(b**2)+(c**2)
+                        if d==f:
+                            print ("el resultado es correcto")
+                    case 2:
+                        print ("hasta luego")
+            case 2:
+                print("que cateto conoce")
+                print("1------adyacente")
+                print("2------opuesto")
+                b=int(input("seleccione una opción"))
+                match b:
+                    case 1:
+                        c=int(input("ingrese la medida del angulo"))
+                        d=int(input("ingrese la medida del angulo adyacente"))
+                        e=d/math.cos(c)
+                        print("la hipotenusa del triangulo es igual a",e )
+                    case 2:
+                        c=int(input("ingrese la medida del angulo"))
+                        d=int(input("ingrese la medida del angulo opuesto"))
+                        e=d/math.sin(c)
+                        print("la hipotenusa del triangulo es igual a",e )
+            case 3:
+                print ("hasta luego")
+
     pass
 
 def ejercicio_5():
