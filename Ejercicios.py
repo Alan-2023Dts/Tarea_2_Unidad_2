@@ -1,3 +1,4 @@
+import math
 def ejercicio_1():
     #Aqui va el ejercicio_1
     Num_1 = int(input("Ingrese el primer número: "))
@@ -49,11 +50,19 @@ def ejercicio_3():
     
 def ejercicio_4():
     #Aqui va el ejercicio_4
+    
     pass
 
 def ejercicio_5():
     #Aqui va el ejercicio_5
+    Radio = float(input("Ingrese el radio del cilidro: "))
+    Altura = float(input("Ingrese la Altura del cilindro: "))
     
+    Area = 2 * math.pi * Radio * (Radio + Altura)
+    Volumen = math.pi * math.pow(Radio,2) * Altura
+    
+    print(f"El Area del cilindro es de: {Area}")
+    print(f"El Volumen del cilindro es de: {Volumen}" )
     pass
 
 def ejercicio_6():
