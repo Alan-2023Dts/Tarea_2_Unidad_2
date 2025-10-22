@@ -1,6 +1,4 @@
 def ejercicio_1():
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     #Aqui va el ejercicio_1
     Num_1 = int(input("Ingrese el primer número: "))
     Num_2 = int(input("Ingrese el segundo número: "))
@@ -10,12 +8,6 @@ def ejercicio_1():
         print(f"El número mayor es: {Num_2}")
     pass
   
-=======
-=======
->>>>>>> Stashed changes
-    #Aqui va el ejercicio_7
-  pass
->>>>>>> Stashed changes
                                                                                                                                  
 def ejercicio_2():
     #Aqui va el ejercicio_2
@@ -46,7 +38,33 @@ def ejercicio_2():
     pass
 def ejercicio_3():
    #Aqui va el ejercicio_3
-    pass
+   Num_1 = int(input("Ingrese el primer número: "))
+   Num_2 = int(input("Ingrese el segundo número: "))
+   Num_3 = int(input("Ingrese el tercer número: "))
+   if Num_1 == Num_2 or Num_1 == Num_3 or Num_2 == Num_3:
+       print("Los tres números son iguales.")
+   elif Num_1 > Num_2 and Num_1 > Num_3:
+       print(f"El número mayor es: {Num_1}") 
+       if Num_2 > Num_3:
+           print(f"El número menor es: {Num_3}")
+       else:
+           print(f"El número menor es: {Num_2}")
+           
+   elif Num_2 > Num_1 and Num_2 > Num_3:
+       print(f"El número mayor es: {Num_2}")
+       if Num_1 > Num_3:
+           print(f"El número menor es: {Num_3}")
+       else:
+           print(f"El número menor es: {Num_1}")
+           
+   elif Num_3 > Num_1 and Num_3 > Num_2:
+       print(f"El número mayor es: {Num_3}")
+       if Num_1 > Num_2:
+           print(f"El número menor es: {Num_2}")
+       else:
+           print(f"El número menor es: {Num_1}")
+    
+pass
     
 def ejercicio_4():
     #Aqui va el ejercicio_4
