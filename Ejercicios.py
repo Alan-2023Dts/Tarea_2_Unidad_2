@@ -1,4 +1,5 @@
 def ejercicio_1():
+<<<<<<< Updated upstream
     #Aqui va el ejercicio_1
     Num_1 = int(input("Ingrese el primer número: "))
     Num_2 = int(input("Ingrese el segundo número: "))
@@ -8,9 +9,37 @@ def ejercicio_1():
         print(f"El número mayor es: {Num_2}")
     pass
   
+=======
+    #Aqui va el ejercicio_7
+  pass
+>>>>>>> Stashed changes
                                                                                                                                  
 def ejercicio_2():
     #Aqui va el ejercicio_2
+    print ("sistema de comparacion de numeros")
+    a=int(input("ingrese el primer numero"))
+    b=int(input("ingrese el segundo numero"))
+    c=int(input("ingrese el tercer numero"))
+    #filtrado para evitar que las cantidades no sean iguales
+    if a==b or b==c or c==a:
+        print("las cantidades no pueden ser iguales")
+    else:
+        #comparacion de las cantidades para obtener la cantidad mayor
+        if a>b and a>c:
+            r1="la cantidad mas grande es ", a
+        elif b>a and b>c:
+            r1="la cantidad mas grande es ", b
+        else:
+            r1="la cantidad mas grande es ", c
+        #comparación de las cantidades para optner la cantidad menor
+        if a<b and a<c:
+            r2="la cantidad mas pequeña es ", a
+        elif b<a and b<c:
+            r2="la cantidad mas pequeña es ", b
+        else:
+            r2="la cantidad mas pequeña es ", c
+        print (r1)
+        print (r2)
     pass
 def ejercicio_3():
    #Aqui va el ejercicio_3
