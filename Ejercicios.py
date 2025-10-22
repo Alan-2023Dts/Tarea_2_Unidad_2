@@ -1,5 +1,6 @@
 def ejercicio_1():
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     #Aqui va el ejercicio_1
     Num_1 = int(input("Ingrese el primer número: "))
     Num_2 = int(input("Ingrese el segundo número: "))
@@ -10,6 +11,8 @@ def ejercicio_1():
     pass
   
 =======
+=======
+>>>>>>> Stashed changes
     #Aqui va el ejercicio_7
   pass
 >>>>>>> Stashed changes
