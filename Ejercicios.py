@@ -1,6 +1,13 @@
 def ejercicio_1():
     #Aqui va el ejercicio_1
-  pass
+    Num_1 = int(input("Ingrese el primer número: "))
+    Num_2 = int(input("Ingrese el segundo número: "))
+    if Num_1 > Num_2: # compara el numero 1 con el numero 2
+        print(f"El número mayor es: {Num_1}")
+    elif Num_2 > Num_1: #compara el numero 2 con el numero 1
+        print(f"El número mayor es: {Num_2}")
+    pass
+  
                                                                                                                                  
 def ejercicio_2():
     #Aqui va el ejercicio_2
