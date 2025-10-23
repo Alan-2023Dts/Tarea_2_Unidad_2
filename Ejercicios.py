@@ -196,7 +196,10 @@ def ejercicio_11():
 
 def ejercicio_12():
     #Aqui va el ejercicio_12
-    
+    print ("sistema de conversion de velocidades km/h a m/s")
+    a=int(input("ingrese la velocidad (km/h)"))
+    b= (a * 1000) / 3600
+    print("el vehiculo se mueve a una velocidad de ", b,"m/s")
     pass
 
 def ejercicio_13():
