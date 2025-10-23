@@ -119,10 +119,17 @@ def ejercicio_10():
 
 def ejercicio_11():
     #Aqui va el ejercicio_11
+#    Fórmula matemática:
+#   C(n, k) = n! / (k! × (n-k)!)
+    n = int(input("Ingrese el valor de n (total de elementos): "))
+    k = int(input("Ingrese el valor de k (elementos a elegir): "))
+    combinaciones = math.factorial(n) / (math.factorial(k) * math.factorial(n - k))
+    print(f"El numero de combinaciones posibles es de: {combinaciones}")
     pass
 
 def ejercicio_12():
     #Aqui va el ejercicio_12
+    
     pass
 
 def ejercicio_13():
