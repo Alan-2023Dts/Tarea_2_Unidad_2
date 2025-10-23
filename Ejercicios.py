@@ -261,6 +261,12 @@ def ejercicio_15():
 
 def ejercicio_16():
     #Aqui va el ejercicio_16
+    print("numero factorial")
+    a=int(input("ingrese el numero"))
+    b=1
+    for i in range(1,a+1):
+        b*=i
+    print("el factorial de ", a, " es ", b)
     pass
 
 ###################################################################################################################
