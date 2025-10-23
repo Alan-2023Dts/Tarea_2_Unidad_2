@@ -153,7 +153,10 @@ def ejercicio_14():
 
 def ejercicio_15():
     #Aqui va el ejercicio_15
-   pass
+    Texto=input("Ingrese un texto: ")
+    Texto_invertido= ''.join(reversed(Texto)) # invierte el texto usando la función reversed y lo une en una cadena (funcion implementada en las librerias de python)
+    print(f"El texto invertido es: {Texto_invertido}")
+    pass
 
 def ejercicio_16():
     #Aqui va el ejercicio_16
