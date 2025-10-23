@@ -146,6 +146,14 @@ def ejercicio_7():
 
 def ejercicio_8():
     #ejercicio 8
+    print("aistema de ordenado de numeros")
+    a=int(input("ingresar primer numero"))
+    b=int("ingrese el segundo nummero")
+    print("el orden de los numeros es el siguiente")
+    if a>b:
+        print(a, ",", b)
+    else:
+        print(b, ",", a)
     pass
 
 def ejercicio_9():
