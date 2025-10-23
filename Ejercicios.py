@@ -92,6 +92,8 @@ def ejercicio_4():
                         print("la hipotenusa del triangulo es igual a",e )
             case 3:
                 print ("hasta luego")
+    else:
+        print ("el triangulo no es un triangulo rectangulo")
 
     pass
 
@@ -109,6 +111,12 @@ def ejercicio_5():
 
 def ejercicio_6():
     #Aqui va el ejercicio_6
+    print("sistema de asignacion de numero pares e impares")
+    a=int(input("ingresa el numero"))
+    if a % 2==0:
+        print("el numero ", a, " es un numero par")
+    else:
+        print ("el numero ", a, " es un numero impar")
     pass 
 
 def ejercicio_7():
