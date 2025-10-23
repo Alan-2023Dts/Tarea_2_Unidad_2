@@ -173,6 +173,15 @@ def ejercicio_9():
 
 def ejercicio_10():
     #Aqui va el ejercicio_10
+    print("sistema de cobro para un estacionamiento")
+    a=int(input("ingrese la hora de entrada en formato de 24 horas (sin incluir los minutos)"))
+    b=int(input("ingrese la hora de salida en formato de 24 horas (sin incluir los minutos)"))
+    c=b-a
+    if c<1:
+        print("el monto a pagar es de $1000 dolares")
+    else:
+        d=((c-1)*600)+1000
+        print("el monto a pagar es de $", d, " dolares")
     pass
 
 def ejercicio_11():
