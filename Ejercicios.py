@@ -1,3 +1,4 @@
+import math
 def ejercicio_1():
     #Aqui va el ejercicio_1
     Num_1 = int(input("Ingrese el primer número: "))
@@ -7,8 +8,10 @@ def ejercicio_1():
     elif Num_2 > Num_1: #compara el numero 2 con el numero 1
         print(f"El número mayor es: {Num_2}")
     pass
+
     #Aqui va el ejercicio_7
-    pass                                                                                                                     
+    pass                                                                                                                       
+                                                                                                                    
 def ejercicio_2():
     #Aqui va el ejercicio_2
     print ("sistema de comparacion de numeros")
@@ -37,8 +40,15 @@ def ejercicio_2():
         print (r2)
     pass
 def ejercicio_3():
-   #Aqui va el ejercicio_3
-    pass
+    #Aqui va el ejercicio_3
+    print("Suma hasta el numero 10 ")
+    total = 0
+    for i in range(1, 11):  # Contador para llegar hasta 10
+        total += i
+    print(f"La suma es: {total}")
+
+     
+ 
     
 def ejercicio_4():
     #Aqui va el ejercicio_4
@@ -87,6 +97,14 @@ def ejercicio_4():
 
 def ejercicio_5():
     #Aqui va el ejercicio_5
+    Radio = float(input("Ingrese el radio del cilidro: "))
+    Altura = float(input("Ingrese la Altura del cilindro: "))
+    
+    Area = 2 * math.pi * Radio * (Radio + Altura)
+    Volumen = math.pi * math.pow(Radio,2) * Altura
+    
+    print(f"El Area del cilindro es de: {Area}")
+    print(f"El Volumen del cilindro es de: {Volumen}" )
     pass
 
 def ejercicio_6():
