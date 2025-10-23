@@ -219,6 +219,37 @@ pass
 
 def ejercicio_14():
     #Aqui va el ejercicio_14
+    import random
+    print("istema impresor de numeros aleatorios")
+    # Generar 15 números aleatorios entre 1 y 100   
+    numeros = []
+    for i in range(15):
+        numero = random.randint(1, 100)
+        numeros.append(numero)
+    # Encontrar los números pares
+    pares = []
+    for numero in numeros:
+        if numero % 2 == 0:
+            pares.append(numero)
+
+    # Encontrar los múltiplos de 7
+    inpares = []
+    for numero in numeros:
+        if numero %2 !=0:
+            inpares.append(numero)
+    # Mostrar los resultados
+    m=0
+    while m!=3:
+        print("1------numeros pares")
+        print("1------numeros inpares")
+        print("1------salir")
+        match m:
+            case 1:
+                print(pares)
+            case 2:
+                print(inpares)
+            case 3:
+                print("hasta luego")
     pass
 
 def ejercicio_15():
