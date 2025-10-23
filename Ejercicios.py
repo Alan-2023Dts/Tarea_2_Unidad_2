@@ -113,6 +113,27 @@ def ejercicio_6():
 
 def ejercicio_7():
     #ejercicio 7
+    bandera = True
+    while bandera :
+        Calificacion_Numerica = int(input("Ingrese calificacion numerica (1-20): "))
+        calificacion_letra = ""
+        if (Calificacion_Numerica >=19  and Calificacion_Numerica <= 20):
+            calificacion_letra = "A"
+        elif (Calificacion_Numerica >= 18 and Calificacion_Numerica < 16):
+            calificacion_letra = "B"
+        elif (Calificacion_Numerica >= 13 and Calificacion_Numerica < 15):
+            calificacion_letra = "C"
+        elif (Calificacion_Numerica >= 10 and Calificacion_Numerica < 12):
+            calificacion_letra = "D"
+        elif (Calificacion_Numerica >= 0 and Calificacion_Numerica < 10):
+            calificacion_letra = "E"
+        elif (Calificacion_Numerica < 0 or Calificacion_Numerica > 20):
+            print("Calificacion invalida. Debe estar entre 0 y 20.")
+            calificacion_letra = "Inválida"
+            print(f"La calificación en letra es: {calificacion_letra}")
+            print("Intentelo de nuevo")
+        else:
+            bandera = False
     pass
 
 def ejercicio_8():
@@ -121,6 +142,17 @@ def ejercicio_8():
 
 def ejercicio_9():
     #Aqui va el ejercicio_9 
+    Numero = int(input("Ingrese un número "))
+    if Numero < 2:
+        print(f"{Numero} NO es un número primo")
+    else:
+        for i in range(2, int(math.sqrt(Numero)) + 1):
+            if (Numero % i == 0):
+                print(f"{Numero} NO es un número primo")
+                break
+            else:
+                 print(f"{Numero} es un número primo")
+        
     pass
 
 def ejercicio_10():
@@ -129,15 +161,33 @@ def ejercicio_10():
 
 def ejercicio_11():
     #Aqui va el ejercicio_11
+#    Fórmula matemática:
+#   C(n, k) = n! / (k! × (n-k)!)
+    n = int(input("Ingrese el valor de n (total de elementos): "))
+    k = int(input("Ingrese el valor de k (elementos a elegir): "))
+    combinaciones = math.factorial(n) / (math.factorial(k) * math.factorial(n - k))
+    print(f"El numero de combinaciones posibles es de: {combinaciones}")
     pass
 
 def ejercicio_12():
     #Aqui va el ejercicio_12
+    
     pass
 
 def ejercicio_13():
     #Aqui va el ejercicio_13
-   pass
+    contador = 0
+    while True:
+        Calificacion = int(input("Ingrese la calificación (1-100): "))
+        print(f"el algoritmo se detiene cuando el valor de la calificación es menor a 0 o mayor a 100")
+        if Calificacion < 0 or Calificacion > 100:
+            break
+        else:
+            contador+=1
+            Calificacion += Calificacion
+            Promedio = Calificacion / contador
+            print(f"El promedio actual es: {Promedio}")
+pass
 
 def ejercicio_14():
     #Aqui va el ejercicio_14
@@ -145,7 +195,10 @@ def ejercicio_14():
 
 def ejercicio_15():
     #Aqui va el ejercicio_15
-   pass
+    Texto=input("Ingrese un texto: ")
+    Texto_invertido= ''.join(reversed(Texto)) # invierte el texto usando la función reversed y lo une en una cadena (funcion implementada en las librerias de python)
+    print(f"El texto invertido es: {Texto_invertido}")
+    pass
 
 def ejercicio_16():
     #Aqui va el ejercicio_16
