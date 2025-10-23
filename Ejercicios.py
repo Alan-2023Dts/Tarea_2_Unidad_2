@@ -134,7 +134,18 @@ def ejercicio_12():
 
 def ejercicio_13():
     #Aqui va el ejercicio_13
-   pass
+    contador = 0
+    while True:
+        Calificacion = int(input("Ingrese la calificación (1-100): "))
+        print(f"el algoritmo se detiene cuando el valor de la calificación es menor a 0 o mayor a 100")
+        if Calificacion < 0 or Calificacion > 100:
+            break
+        else:
+            contador+=1
+            Calificacion += Calificacion
+            Promedio = Calificacion / contador
+            print(f"El promedio actual es: {Promedio}")
+pass
 
 def ejercicio_14():
     #Aqui va el ejercicio_14
