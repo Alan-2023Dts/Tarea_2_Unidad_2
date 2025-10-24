@@ -2,9 +2,10 @@ import math
 import os
 
 def limpiar_consola():
-    """Función para limpiar la consola"""
-    os.system('cls' if os.name == 'nt' else 'clear')
+  
+   
     input("Presione Enter para continuar...")
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 def ejercicio_1():
     #Aqui va el ejercicio_1
