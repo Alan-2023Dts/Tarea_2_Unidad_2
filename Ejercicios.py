@@ -1,4 +1,11 @@
 import math
+import os
+
+def limpiar_consola():
+    """Función para limpiar la consola"""
+    os.system('cls' if os.name == 'nt' else 'clear')
+    input("Presione Enter para continuar...")
+
 def ejercicio_1():
     #Aqui va el ejercicio_1
     Num_1 = int(input("Ingrese el primer número: "))
@@ -7,10 +14,8 @@ def ejercicio_1():
         print(f"El número mayor es: {Num_1}")
     elif Num_2 > Num_1: #compara el numero 2 con el numero 1
         print(f"El número mayor es: {Num_2}")
-    pass
-
-    #Aqui va el ejercicio_7
-    pass                                                                                                                       
+    limpiar_consola()
+    pass                                                                                                              
                                                                                                                     
 def ejercicio_2():
     #Aqui va el ejercicio_2
@@ -38,6 +43,7 @@ def ejercicio_2():
             r2="la cantidad mas pequeña es ", c
         print (r1)
         print (r2)
+    limpiar_consola()
     pass
 def ejercicio_3():
     #Aqui va el ejercicio_3
@@ -46,9 +52,7 @@ def ejercicio_3():
     for i in range(1, 11):  # Contador para llegar hasta 10
         total += i
     print(f"La suma es: {total}")
-
-     
- 
+    limpiar_consola()
     
 def ejercicio_4():
     #Aqui va el ejercicio_4
@@ -94,7 +98,7 @@ def ejercicio_4():
                 print ("hasta luego")
     else:
         print ("el triangulo no es un triangulo rectangulo")
-
+    limpiar_consola()
     pass
 
 def ejercicio_5():
@@ -107,6 +111,7 @@ def ejercicio_5():
     
     print(f"El Area del cilindro es de: {Area}")
     print(f"El Volumen del cilindro es de: {Volumen}" )
+    limpiar_consola()
     pass
 
 def ejercicio_6():
@@ -117,6 +122,7 @@ def ejercicio_6():
         print("el numero ", a, " es un numero par")
     else:
         print ("el numero ", a, " es un numero impar")
+    limpiar_consola()
     pass 
 
 def ejercicio_7():
@@ -142,6 +148,7 @@ def ejercicio_7():
             print("Intentelo de nuevo")
         else:
             bandera = False
+    limpiar_consola()
     pass
 
 def ejercicio_8():
@@ -154,6 +161,7 @@ def ejercicio_8():
         print(a, ",", b)
     else:
         print(b, ",", a)
+    limpiar_consola()
     pass
 
 def ejercicio_9():
@@ -168,7 +176,7 @@ def ejercicio_9():
                 break
             else:
                  print(f"{Numero} es un número primo")
-        
+    limpiar_consola()
     pass
 
 def ejercicio_10():
@@ -182,6 +190,7 @@ def ejercicio_10():
     else:
         d=((c-1)*600)+1000
         print("el monto a pagar es de $", d, " dolares")
+    limpiar_consola()
     pass
 
 def ejercicio_11():
@@ -192,6 +201,7 @@ def ejercicio_11():
     k = int(input("Ingrese el valor de k (elementos a elegir): "))
     combinaciones = math.factorial(n) / (math.factorial(k) * math.factorial(n - k))
     print(f"El numero de combinaciones posibles es de: {combinaciones}")
+    limpiar_consola()
     pass
 
 def ejercicio_12():
@@ -200,6 +210,7 @@ def ejercicio_12():
     a=int(input("ingrese la velocidad (km/h)"))
     b= (a * 1000) / 3600
     print("el vehiculo se mueve a una velocidad de ", b,"m/s")
+    limpiar_consola()
     pass
 
 def ejercicio_13():
@@ -215,7 +226,8 @@ def ejercicio_13():
             Calificacion += Calificacion
             Promedio = Calificacion / contador
             print(f"El promedio actual es: {Promedio}")
-pass
+    limpiar_consola()
+    pass
 
 def ejercicio_14():
     #Aqui va el ejercicio_14
@@ -250,6 +262,7 @@ def ejercicio_14():
                 print(inpares)
             case 3:
                 print("hasta luego")
+    limpiar_consola()
     pass
 
 def ejercicio_15():
@@ -257,6 +270,7 @@ def ejercicio_15():
     Texto=input("Ingrese un texto: ")
     Texto_invertido= ''.join(reversed(Texto)) # invierte el texto usando la función reversed y lo une en una cadena (funcion implementada en las librerias de python)
     print(f"El texto invertido es: {Texto_invertido}")
+    limpiar_consola()
     pass
 
 def ejercicio_16():
@@ -267,6 +281,7 @@ def ejercicio_16():
     for i in range(1,a+1):
         b*=i
     print("el factorial de ", a, " es ", b)
+    limpiar_consola()
     pass
 
 ###################################################################################################################
